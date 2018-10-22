@@ -7,10 +7,8 @@
 
     <!-- 控制台 -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>INFO</level>
-            <onMatch>ACCEPT</onMatch>
-            <onMismatch>DENY</onMismatch>
         </filter>
         <encoder>
             <charset>UTF-8</charset>
@@ -32,7 +30,7 @@
         </encoder>
     </appender>
 
-    <logger name="javax" level="WARN"/>
+    <!--<logger name="javax" level="WARN"/>
     <logger name="ch" level="WARN"/>
     <logger name="io" level="WARN"/>
     <logger name="net" level="WARN"/>
@@ -40,7 +38,7 @@
     <logger name="sun" level="WARN"/>
     <logger name="jdbc" level="WARN"/>
     <logger name="com.alibaba" level="WARN"/>
-    <logger name="com.sun" level="WARN"/>
+    <logger name="com.sun" level="WARN"/>-->
 
     <root level="DEBUG">
         <appender-ref ref="STDOUT"/>

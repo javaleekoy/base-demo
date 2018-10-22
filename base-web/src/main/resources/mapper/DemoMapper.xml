@@ -10,7 +10,7 @@
         t_demo
     </sql>
 
-    <select id="getDemo" parameterType="Java" resultType="com.example.base.model.Demo">
+    <select id="getDemo" parameterType="java.lang.Long" resultType="com.example.base.model.Demo">
         SELECT
         <include refid="BASE_COLUMN"/>
         FROM
